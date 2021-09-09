@@ -1,0 +1,36 @@
+{
+    "name": "Attendance Tracker",
+    "version": "1.0.0.0",
+    "manifest_version": 2,
+    "description": "This extension is for the purpose of tracking attendance. The extension can download attendance and also log the time when a attendee joined a meeting. The extension is currently fully functional for the Google Meet platform and the team is working on integrating it with the platforms of Zoom and Webex. We plan to make the extension highly adaptable and applicable to as many platforms as possible.",
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Attendance Tracker"
+    },
+    "icons": {
+        "16": "images.png",
+        "48": "images.png",
+        "128": "images.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [ 
+        "tabs",
+        "notifications",
+        "activeTab",
+        "webRequest",
+        "<all_urls>",
+        "http://*/*",
+        "https://*/*", 
+        "storage"
+    ]
+}
