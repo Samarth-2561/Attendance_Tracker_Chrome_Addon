@@ -17,10 +17,12 @@ Specific Functionalities -
 
 1) Google Meet 
 	i) Attendance log
-	ii) Unque attendees
+	ii) Unqiue attendees
 	iii) Joining log and leaving log with Time Stamps
 	iv) Duration in the meeting
 2) Zoom 
 	i) Current attendance
 3) Webex
 	i) Current attendance
+
+Totally Generic for this platform
